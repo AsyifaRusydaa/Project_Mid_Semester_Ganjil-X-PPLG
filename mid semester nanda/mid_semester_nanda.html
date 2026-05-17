@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Siswa Baru</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+<body>
+    <form>
+        <table border="0" cellpadding="8" class="container">
+        <h2>Formulir Pendaftaran Siswa Baru</h2>
+            
+            <tr>
+                <td>Nama Lengkap:</td>
+                <td><input type="text" placeholder="Masukkan Nama Lengkap"></td>
+            </tr>
+
+            <tr>
+                <td>Tempat Lahir:</td>
+                <td><input type="text" placeholder="Masukkan Tempat Lahir"></td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td><input type="radio" value="Homme">Homme
+                    <input type="radio" value="Femme">Femme
+                    <input type="radio" value="Baguette">Baguette</td>
+            </tr>
+
+            <tr>
+                <td>NISN:</td>
+                <td><input type="number" placeholder="Masukkan NISN"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder="Masukkan Email"></td>
+            </tr>
+
+            <tr>
+                <td>Nomor Handphone:</td>
+                <td><input type="number" placeholder="No.HP"></td>
+            </tr>
+
+            <tr>
+               <td>Agama:</td>
+            <td><select>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select></td>
+            </tr>
+            
+            <tr>
+                <td>Nama Ayah:</td>
+                <td><input type="text" placeholder="Masukkan Nama Ayahmu"></td>
+            </tr>
+
+            <tr>
+                <td>Pekerjaan Ayah:</td>
+                <td><input type="text" placeholder="Masukkan Pekerjaan Ayahmu"></td>
+            </tr>
+
+            <tr>
+                <td>Nama Ibu:</td>
+                <td><input type="text" placeholder="Masukkan Nama Ibumu"></td>
+            </tr>
+
+            <tr>
+                <td>Nomor Handphone Orang Tua:</td>
+                <td><input type="number" placeholder="No.HP"></td>
+            </tr>
+
+            <tr>
+                <td>Jurusan:</td>
+                <td><input type="radio" value="PPLG">PPLG
+                    <input type="radio" value="MPLB">MPLB
+                    <input type="radio" value="AKL">AKL
+                    <input type="radio" value="Kuliner">Kuliner</td>
+            </tr>
+
+            <tr>
+                <td>Ekstrakulikuler:</td>
+                <td><input type="checkbox">TSPM
+                    <input type="checkbox">HW
+                    <input type="checkbox">Bahasa Inggris
+                    <input type="checkbox">Futsal
+                    <input type="checkbox">Voli
+                    <input type="checkbox">Badminton</td>
+            </tr>
+
+            <tr>
+                <td>Upload Fotomu:</td>
+                <td><input type="file" id="Foto" name="Foto" accept="image/*"></td>
+            </tr>
+
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" placeholder="Masukkan Username"></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" placeholder="Masukkan Password"></td>
+            </tr>
+
+            <tr>
+                <td>Konfirmasi Password</td>
+                <td><input type="password" placeholder="Masukkan Password Sekali Lagi"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Alamat:</label></td>
+                <td><textarea name="Alamat" rows="4" cols="20" placeholder="Masukkan Alamat"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">submit</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

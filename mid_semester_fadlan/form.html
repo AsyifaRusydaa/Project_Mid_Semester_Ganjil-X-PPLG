@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTS-8">
+    <meta name="vieport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir pendaftaran siswa baru</title>
+    <style>
+        * {
+            font-family: arial,sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: azure;
+            padding: 20px;
+        } 
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        .from-container {
+            max-width: 700px;
+            margin: 0 q=auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 80x;
+            box-shadow: 0 2px 8px rgba(0,0,0,0,1)
+
+        }
+
+        .from-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .from-table td {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        .label-celll {
+            width:  30%;
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <div class="from-container">
+        <h2>FORMULIR PENDAFTARAN SISWA BARU</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="sention-title">A. DATA PRIBADI</div>
+            <table class="from-table">
+                <tr>
+                    <td class="label-celll" >Nama lengkap</td>
+                    <td><input type="text" name="nama_lengkap" required></td>    
+                </tr>
+                <tr>
+                    <td class="label-celll">Tanggal Lahir</td>
+                    <td><input type="date" name="tanggal_lahir" required></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">Tempat Lahir</td>
+                    <td><input type="date" name=" Tempat lahir" required></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">jenis kelamin</td>
+                    <td class="radio-group">
+                        <input type="radio" name="jenis kelamin" value="laki-laki" id="laki" required>
+                        <label for="laki">laki-laki</label>
+                        <input type="radio" name="jenis kelamin" value="perempuan" id="perempuan" required>
+                        <label for="perempuan">perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-celll">NISN</td>
+                    <td><input type="number" name="nisn" required minlength="10" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">Email</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">Nomor HP</td>
+                    <td><input type="number" name="no_hp" required></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">alamat</td>
+                    <td><textarea name="alamat"  required></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">Agama</td>
+                    <td>
+                        <select name="Agama" required>
+                            <option value="islam">islam</option>
+                            <option value="kristen">kristen</option>
+                            <option value="katolik">katolik</option>
+                            <option value="hindu">hindu</option>
+                            <option value="buddha">buddha</option>
+                            <option value="khonghucu">khonghucu</option>
+                        </select>                      
+                    </td>
+                </tr>
+            </table>
+            <div class="sention-title">B. DATA ORANG TUA</div>
+            <table class="from-table">
+                <tr>
+                    <td class="label-celll">Nama Ayah</td>
+                    <td><input type="text" name="nama_ayah"></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">Pekerjaan Ayah</td>
+                    <td><input type="text" name="Pekerjaan_ayah" required></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">Pekerjaan_Ibu</td>
+                    <td><input type="text" name="Pekerjaan_Ibu" required></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">No HP orang tua</td>
+                    <td><input type="tel" name="no_hp_ortu" required></td>
+                </tr>
+            </table>
+            <div class="sention-title"></div>C. DATA TAMBAHAN</div>
+            <Table class="from-table">
+                <tr>
+                    <td class="label-celll">jurusan</td>
+                    <td class="radio-group">
+                        <input type="radio" name="jurusan" value="RPL" required>
+                        <label for="rpl">RPL</label>
+                        <input type="radio"name="jurusan" value="MPLB" required>
+                        <label for="mplb">mplb</label>
+                        <input type="radio" name="jurusan" value="kuliner" required>
+                        <label for="kuliner">kuliner</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-celll">Ekstrakulikuler</td>
+                    <td class="checkbox-group">
+                        <input type="checkbox" name="Extra[]" value="Olahraga" id="Olahraga">
+                        <label for="Olahraga">Olahraga</label>
+                        <input type="checkbox" name="ektra[]" value="futsal" id="futsal">
+                        <label for="futsal">futsal</label>
+                </tr>
+            </Table>
+            <div class="sention-title">D.DATA AKUN</div>
+            <tr class="from-table">
+                <tr>
+                    <td class="label-celll">Username</td>
+                    <td><input type="text" name="Username" required minlength="5"></td>
+                </tr>
+                <tr>
+                    <td class="label-celll">password</td>
+                    <td><input type="password" name="password" required minlength="6"></td>
+                </tr>
+                <tr class="label-celll">Konfirmasi password</tr>
+                <td><input type="password" name="Konfirmasi_password" required></td>
+            </tr>
+            </table>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-submit"></button>
+                <button type="reset" class="btn-reset">reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

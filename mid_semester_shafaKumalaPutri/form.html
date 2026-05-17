@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulir Pendaftaran Siswa Baru - SMK Muhammdiyah 1 Weleri</title>
+        <style>
+            /*KETENTUAN STYLE SEDERHANA*/
+            body{
+
+            }
+                background-color: #c797b9;
+                font-family: Arial, Helvetica, sans-serif;
+                display:flex;
+                justify-content:center;
+                padding:20px;
+                .container {
+                    background-color: white;
+                    padding:30px;
+                    border-radius:8px;
+                    box-shadow: 0 4px 8px rgba(0 ,0 ,0 , 0.1);
+                    width: 80%;
+                    max-width: 800px;
+                }
+                h2, h3 {
+                    text-align:center;
+                    color:#000000
+                }
+                table {
+
+                }
+                    width:100%; 
+
+                        /*Beri jarak (padding) pada setiap <td>*/
+                   td {
+                     padding: 8px;
+                     vertical-align: top;
+                   }
+                   input[type="text"], input[type="number"], input[type="email"],
+                   input[type="date"], input[type="password"], input[type="tel"],
+                 select, textarea {
+                    width: 100%;
+                    padding: 8px;
+                    border:1px solid "ccc";
+                    border-radius: 4px;
+                 }
+                    .btn-submit {
+                        background-color: #00ffff;
+                        color: #ffffff;
+                        border: none;
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        border-radius: 4px;
+                    }
+                    
+                     .btn-reset {
+                        background-color: #dc3545;
+                        color: white;
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        border-radius: 4px;
+                    }
+                        .section-title {
+                            background-color: #00ffff;
+                            font-weight: bold;
+                            padding: 5px 10px;
+                     }
+                       </style>
+                    </head>
+                    <body>
+                    
+                    <div class="container">
+                        <h2>FORMULIR PENDAFTARAN SISWA BARU</h2>
+                        <h3>SMK MUHAMMADIYAH 1 WELERI </h3>
+                        <hr>
+
+                        <form action="#" method="post" enctype="multipart/form-data">
+                            <table>
+                                <tr><td colspan="3" class="section-title">A. DATA PRIBADI</td>
+                                </tr>
+                                <tr>
+                                    <td>Tempat Lahir
+                                        <td>:</td>
+                                        <td><input type="text" name="tempat_lahir"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tanggal Lahir</td>
+                                        <td>:</td>
+                                        <td>
+                                            <input type="radio" name="jk" value="L"> Laki-laki
+                                            <input type="radio" name="jk" value="L"> Perempuan
+                                           </td>
+                                            </tr>
+                                            <tr>
+                                                <td>NISN</td>
+                                                <td>:</td>
+                                                <td><input type="number" name="nisn"></td>
+                                             </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Email</td>
+                                                <td>:</td>
+                                                <td><input type="email" name="email"></td>
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nomor HP</td>
+                                                <td>:</td>
+                                                <td><input type="number" name="hp"></td>
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Alamat</td>
+                                                <td>:</td>
+                                                <td><input type="alamat" rows="3" ></textarea></td>
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agama</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <select name="agama">
+                                                    <option value="Islam">Islam</option>
+                                                    <option value="Kristen">Kristen</option>
+                                            <option value="Katolik">Katolik</option>
+                                            <option value="Hindu">Hindu</option>
+                                            <option value="Budha">Budha</option>
+
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nama ayah</td>
+                                                <td>:</td>
+                                                <td><input type="email" name="nama_ayah"></td>
+                                                 </td>
+ 
+                                            </tr>
+                                            <tr>
+                                                <td>Perkejaan ayah</td>
+                                                <td>:</td>
+                                                <td><input type="email" name="kerja_ayah"></td>
+                                                 </td>
+
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nama Ibu</td>
+                                                <td>:</td>
+                                                <td><input type="email" name="nama_ibu"></td>
+                                                 </td>
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pekerjaan Ibu</td>
+                                                <td>:</td>
+                                                <td><input type="email" name="kerja_ayah"></td>
+                                                 </td>
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>No hp orang tua</td>
+                                                <td>:</td>
+                                                <td><input type="email" name="hp_ortu"></td>
+                                                 </td>
+                                            </tr><td colspan="3" class="section-title">C.DATA TAMBAHAN</td>
+                                        
+                                                <td> JURUSAN</td>
+                                                </td>:</td:>
+                                                <td
+                                                   <input type="checkbox" name="jurusan" value="rpl">rpl
+                                                <input type="checkbox" name="jurusan" value="kuliner">kuliner
+                                                <input type="checkbox" name="jurusan" value="akl">akl
+                                                <input type="checkbox" name="jurusan" value="mplb">mplb
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                    <td> EKSTRAKULIKULER</td>
+                                                </td>:</td:>
+                                                <td
+                                                <input type="checkbox" name="ekstra[]" value="hw">hw
+                                                <input type="checkbox" name="ekstra[]" value="tspm">tspm
+                                                <input type="checkbox" name="ekstra[]" value="voli">voli
+                                                <input type="checkbox" name="ekstra[]" value="badminton">badminton
+                                                <input type="checkbox" name="ekstra[]" value="futsal">futsal
+
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Upload foto</td>
+                                                </td>:</td:>
+                                                <td><input type="file" name="foto"></td>
+                                                </tr>
+
+                                                <br>
+                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            
+
+
+
+
+            
+                       
+
+                        
+
+
+
+                    
+                
+                    
+                   
+
+                
+                    
+                
+
+
+            
+
+            
+            

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulir Pendaftaran Siswa Baru</title>
+        <style>
+            body {
+              background-color: lavender;
+              font-family: Arial, sans-serif;
+            }
+             .container {
+                width: 60%;
+                margin: auto;
+                background-color: darkgray;
+                padding: 20px;
+                border-radius: 10px;
+             }
+             h2 {
+                text-align: center;
+             }
+             table {
+                width: 100%;
+             }
+             td {
+                padding: 8px;
+             }
+             input, select, textarea {
+                width: 100%;
+                padding: 5px;
+             }
+             .btn-submit {
+                background-color: ivory;
+                color: cadetblue;
+                border: none;
+                padding: 8px;
+             }
+             .btn-reset {
+                background-color: hotpink;
+                color: indianred;
+                border: none;
+                padding: 8px;
+             }
+           </style>
+        </head>
+        <body>
+        <div class="container">
+        <h2>FORMULIR PENDAFTARAN SISWA BARU</h2>
+        <form>
+            <table border="0">
+        <tr><td colspan="2"><b>A. DATA PRIBADI</b></td></tr>  
+        <tr> 
+        <td>Nama Lengkap</td>
+        <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Tempat Lahir</td>
+            <td><input type="text" name="tempat_lahir"></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td><input type="date" name="tanggal_lahir"></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+                <input type="radio" name="jk"> Laki-Laki
+                <input type="radio" name="jk"> Perempuan
+            </td>
+        </tr>
+        <tr>
+            <td>NISN</td>
+            <td><input type="number" name="nisn"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>No HP</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td><textarea></textarea></td>
+        </tr>
+        <tr>
+            <td>Agama</td>
+            <td>
+                <select>
+                    <option>Islam</option>
+                    <option>Kristen</option>
+                    <option>Katolik</option>
+                    <option>Hindu</option>
+                    <option>Buddha</option>
+                    <option>Konghucu</option>
+                </select>
+            </td>
+        </tr>
+        <tr><td colspan="2" ><b>B. DATA ORANG TUA</b></td></tr>
+        <tr>
+            <td> Nama Ayah</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Pekerjaan Ayah</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Nama Ibu</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Pekerjaan Ibu</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>No HP Orang Tua</td>
+            <td><input type="tel"></td>
+        </tr>
+        <tr><td colspan="2" ><b>C.DATA TAMBAHAN</b></td></tr>
+        <tr>
+            <td>Jurusan</td>
+            <td>
+                <select>
+                    <option>RPL</option>
+                    <option>TATA BOGA</option>
+                    <option>MPLB</option>
+                    <option>AKL</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Ekstrakulikuler</td>
+            <td>
+                <input type="checkbox"> Volly
+                <input type="checkbox"> Futsal
+                <input type="checkbox"> Badminton
+                <input type="checkbox"> TSPM
+                <input type="checkbox"> HW
+            </td>
+        </tr>
+        <tr>
+            <td>Upload Foto</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr><td colspan="2"><b>D. DATA AKUN</b></td></tr>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Konfirmasi Password</td>
+            <td><input type="password" name="confirm_password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Daftar" class="btn-submit">
+                <input type="reset" value="Reset" class="btn-reset">
+            </td>
+        </tr>
+    </table>
+    </form>
+    </div>
+    </body>
+    </html>
+        

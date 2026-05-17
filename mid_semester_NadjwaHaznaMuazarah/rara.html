@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Siswa Baru</title>
+    <link rel="stylesheet" href="rara.css">
+</head>
+<body>
+    <div class="login">
+        <h2> Formulir Pendaftaran Siswa</h2>
+        <h3> DATA Diri sendiri</h3> <br>
+        <table> Nama Lengkap</table>
+        <input type="text" placeholder="Nama Anda">
+        <table> Tempat Lahir</table>
+        <input type="text" placeholder="Tempat Lahir">
+        <label> Tanggal Lahir</label>
+        <input type="date" placeholder="contoh xx/xx/xxxx">
+    
+        <div class="la"> 
+            <p>Jenis Kelamin </p>
+        <input type="radio" name="Laki_Laki" id="LLaki"> Laki-laki
+        <input type="radio" name="Perempuan" id="ppm"> Perempuan <br> 
+        </div>
+        <table>NISN</table>
+        <input type="number" placeholder="contoh 5728581">
+        <table> Email Aktif</table>
+        <input type="email" placeholder="contoh someone@gmail.com">
+        <table> Nomor HP</table>
+         <input type="number" placeholder="contoh 08xxxxxxxx">
+        <table> Alamat</table>
+         <input type="text" placeholder="jalan mawar no 09">
+        <table> agama</table>
+        <select> 
+        <option>Islam</option>    
+        <option> Katolik</option>   
+        </select>
+    </div>
+         
+    <div class="login"> 
+        <h3>DATA ORANG TUA</h3> <br>
+        <label> Nama Ayah </label>
+        <input type="text" placeholder="Nama Ayah"> 
+        
+        <label> Pekerjaan Ayah </label>
+        <input type="text" placeholder="Pekerjaan Ayah"> 
+        
+        <label> Nama Ibu </label>
+        <input type="text" placeholder="Nama Ibu"> 
+
+        <label> Pekerjaan Ibu </label>
+        <input type="text" placeholder="Pekerjaan Ibu"> 
+
+        <table> Nomor HP Orang Tua</table>
+         <input type="number" placeholder="contoh 08xxxxxxxx">
+    </div>
+
+    <div class="login"> 
+         <h3> DATA TAMBAHAN</h3> <br> 
+         <div class="la">
+         <p>Jurusan</p>
+         
+        <input type="radio" name="RPL" id="RPL"> RPL
+        <input type="radio" name="KULINEER" id="KLR"> KULINEER <br> 
+        <input type="radio" name="AKL" id="AKL"> AKL
+        <input type="radio" name="MPLB" id="MPLB"> MPLB <br> 
+         </div>
+        <div class="la">
+        <p>Ekstrakulikuler </p>
+        <input type="checkbox" name="Bahasa Inggris"> Bahasa Inggris
+        <input type="checkbox" name="Alba Craft">Alba Craft
+        <input type="checkbox" name="TSPM"> TSPM
+        <input type="checkbox" name="HW"> HW
+        </div>
+        <label> upload foto </label>
+        <input type="file">
+     
+    </div>
+
+    <div class="login 4">
+        <h3> DATA AKUN</h3>
+        <label> Username</label>
+        <input type="text" placeholder="@someone_67">
+        <label> Password</label>
+        <input type="password">
+        <label> Konfirmasi Password</label>
+        <input type="password">
+        
+    
+     
+        <input id="boton" type="submit" value="SUBMIT">
+        
+        <input id="boton" type="reset" value="RESET">
+
+    </div>
+</body>
+</html>

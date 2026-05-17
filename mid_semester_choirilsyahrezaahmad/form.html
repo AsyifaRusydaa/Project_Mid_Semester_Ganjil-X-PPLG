@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div></div>
+
+    <h2 align="center">Formulir Pendaftaran Siswa SMK</h2>
+<!-- {{Bagian HTML}} -->
+    <form action="" method="post" class="container">
+        <table border="0" cellpadding="10" align="center" >
+
+            <h2 align="center">A. Data Pribadi</h2>
+
+            <tr>
+                <td class="form-label">Nama Lengkap</td>
+                <td>:</td>
+                <td><input type="text" name="Nama" id="Nama" class="form-control" placeholder="Masukkan Nama"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">Tempat lahir</td>
+                <td>:</td>
+                <td><input type="text" name="TT" id="TT" class="form-control" placeholder="Masukkan Tempat Lahir"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="date" name="TL" id="TL" class="form-control" placeholder="Masukkan Tanggal Lahir"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">Jenis Kelamin</td>
+                <td>:</td>
+                <td><input type="radio" name="JL_laki-laki" id="JL_laki-laki" class="form-control" >Laki-laki
+                <input type="radio" name="JL_perempuan" id="JL_perempuan" class="form-control" >Perempuan</td>
+            </tr>
+
+            <tr>
+                <td class="form-label">NISN</td>
+                <td>:</td>
+                <td><input type="number" name="Number" id="Number" class="form-control" placeholder="Masukkan"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">Email</td>
+                <td>:</td>
+                <td><input type="email" name="email" id="email" class="form-control" placeholder="Masukkan Email"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">Nomor HP</td>
+                <td>:</td>
+                <td><input type="number" name="number" id="number" class="form-control" placeholder="Masukkan Number"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">Alamat</td>
+                <td>:</td>
+                <td><textarea name="" id="" cols="40" rows="10"></textarea></td>
+            </tr>
+                
+            <tr>
+                <td class="form-label">Agama</td>
+                <td>:</td>
+                <td>
+                    <select name="agama" id="agama" class="form-control">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen Protestan">Kristen Protestan</option>
+                        <option value="Kristen Katolik">Kristen Katolik</option>
+                        <option value="Budhha">Budhha</option>
+                        <option value="konghucu">Hindu</option>
+                        <option value="konghucu">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <table border="0" cellpadding="10" align="center" >
+            
+            <h2 align="center">B. Data Minimal 3</h2>
+            
+            <tr>
+                <td class="form-label">Nama Ayah </td>
+                <td>:</td>
+                <td><input type="text" name="ayah" id="ayah" class="form-control" placeholder="Masukkan Nama Ayah"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">Pekerjaan Ayah </td>
+                <td>:</td>
+                <td><input type="text" name="Pekerjaan_ayah" id="Pekerjaan_ayah" class="form-control" placeholder="Masukkan Pekerjaan Ayah"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">Nama Ibu </td>
+                <td>:</td>
+                <td><input type="text" name="ibu" id="ibu" class="form-control" placeholder="Masukkan Nama Ibu"></td>
+            </tr>
+
+            <tr>
+                <td> Nama Ibu</td>
+                <td>:</td>
+                <td><input type="text" name="Pekerjaan_ibu" id="Pekerjaan_ibu" class="form-control" placeholder="Masukkan Pekerjaan Ibu"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">No HP Oang Tua </td>
+                <td>:</td>
+                <td><input type="tel" name="ayah" id="ayah" class="form-control" placeholder="Masukkan No Orang Tua"></td>
+            </tr>
+        </table>
+
+        
+        <table border="0" cellpadding="10" align="center" >
+            
+            <h2 align="center">C. Data Tambahan</h2>
+       
+            
+            <tr>
+                <td class="form-label">Jurusan </td>
+                <td>:</td>
+                <td><input type="radio" name="RPL" id="RPL" class="form-control" >RPL
+                    <input type="radio" name="TKJ" id="TKJ" class="form-control" >TKJ
+                    <input type="radio" name=""MPLB id="MPLB" class="form-control" >MPLB
+                    <input type="radio" name="AKL" id="MPLB" class="form-control" >AKL</td>
+            </tr>
+
+            <tr>
+                <td class="form-label">Ekstrakurikuler </td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" value="Volly" name="Volly" id="Volly" class="form-control">Volly</input>
+                    <input type="checkbox"value="futsal"name="futsal" id="futsal" class="form-control">futsal</input>
+                    <input type="checkbox"value="alba craft"name="alba craft" id="alba craft" class="form-control">alba craft</input>
+                    <input type="checkbox" value="badminton"name="badminton" id="badminton" class="form-control">badminton</input>
+                    <input type="checkbox" value="B. Inggris"name="B.Inggris" id="B.Inggris" class="form-control">B.inggris</input>
+            </tr>
+
+            
+            <tr>
+                <td class="form-label">Uplod Foto </td>
+                <td>:</td>
+                <td>
+                    <input type="file" name="Uplod Foto" id="Uplod Foto ">
+                </td>
+        </table>
+
+         
+        <table border="0" cellpadding="10" align="center" >
+            
+            <h2 align="center">D. Data AKun</h2>
+            
+            <tr>
+                <td class="form-label">Username</td>
+                <td>:</td>
+                <td><input type="text" name="Username" id="Username" class="form-control" placeholder="Masukkan Username"></td>
+            </tr>
+            <tr>
+                <td class="form-label">Password</td>
+                <td>:</td>
+                <td><input type="text" name="Password" id="Password" class="form-control" placeholder="Masukkan Password"></td>
+            </tr>
+
+            <tr>
+                <td class="form-label">konfirmasi Password</td>
+                <td>:</td>
+                <td><input type="text" name="Username" id="Username" class="form-control" placeholder="konfirmasi Password"></td>
+            </tr>
+
+        </table>
+
+            <div align="center">
+                <button type="submit">Daftar</button>
+                <button type="reset">Reset</button>
+            </div>
+    
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulir Pendaftaran Siswa Baru</title>
+<style>
+            body {
+                background-color: #696969; /* warna 
+                lembut */
+                font-family: Arial, sans-serif;
+            }
+            .contrainer {
+                width: 60%;
+                margin: auto; /* form di tengah */
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px gray;
+            }
+            table {
+                width: 100%;
+            }
+            td {
+                padding: 8px; /* padding setiap td */
+            }
+            h2 {
+                text-align: center;
+            }
+            .btn-submis {
+                background-color: aquamarine;
+                color: azure;
+                padding: 8px 15;
+                border: none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contrainer">
+            <h2>Formulir Pendaftaran Siswa Baru</h2>
+            <form>
+                <table border="0">
+                    <!--A. DATA PRIBADI-->
+                    <tr><td colspan="2"><b>A. DATA PRIBADI</b></td></tr>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td><input type="text" name="nama"></td>
+                    </tr>
+                    <tr>
+                        <td>Tempat Lahir</td>
+                        <td><input type="text"
+                        name="tempat_lahir"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td><input type="date"
+                        name="tgl_lahir"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="Laki-Laki">
+                            Laki-Laki
+                            <input type="radio" name="Perempuan">
+                            Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>NISN</td>
+                        <td><input type="number" name="nisn"></td>        
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Nomor HP</td>
+                        <td><input type="number" name="hp"></td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td><textarea name="alamat"></textarea></td>
+                    </tr>
+                    <tr>
+                    <td>Agama</td>
+                    <td>
+                        <select name="agama">
+                            <option>Islam</option>
+                            <option>Kristen</option>
+                            <option>Katolik</option>
+                            <option>Buddha</option>
+                            <option>Konghucu</option>
+                            <option>Hindu</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <!-- B. DATA ORANG TUA -->
+                     <tr><td colspan="2"><b>B. DATA ORANG TUA</b></td></tr>
+                     <tr>
+                        <td>Nama Ayah</td>
+                        <td><input type="text" name="ayah"></td>
+                     </tr>
+                     <tr>
+                        <td>Pekerjaan Ayah</td>
+                        <td><input type="text" name="kerja_ayah"></td>
+                     </tr>
+                     <tr>
+                        <td>Nama Ibu</td>
+                        <td><input type="text" name="ibu"></td>
+                     </tr>
+                     <tr>
+                        <td>Pekerjaan Ibu</td>
+                        <td><input type="text" name="kerja_ibu"></td>
+                     </tr>
+                     <tr>
+                        <td>No HP Orang Tua</td>
+                        <td><input type="tel" name="hp_ortu"></td>
+                     </tr>
+                    <!-- C. DATA TAMBAHAN -->
+                     <tr><td colspan="2"><b>C. DATA TAMBAHAN</b></td></tr>
+                     <tr>
+                        <td>Jurusan</td>
+                        <td>
+                            <input type="radio"
+                            name="jurusan"> RPL
+                            <input type="radio"
+                            name="jurusan"> TKJ
+                            <input type="radio"
+                            name="jurusan"> MPLB
+                            <input type="radio"
+                            name="jurusan"> AKL
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Ekstrakurikuler</td>
+                        <td>
+                            <input type="checkbox"> Pramuka
+                            <input type="checkbox"> Paskibra
+                            <input type="checkbox"> PMR 
+                            <input type="checkbox"> Futsal
+                            <input type="checkbox"> Rohis
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Uplod Foto</td>
+                        <td><input type="file" name="foto"></td>
+                     </tr>
+                     <!-- D. DATA AKUN -->
+                      <tr><td colspan="2"><b>D.DATA AKUN</b></td></tr>
+                      <tr>
+                        <td>Username</td>
+                        <td><input type="text" name="username"></td>
+                      </tr>
+                      <tr>
+                        <td>Password</td>
+                        <td><input type="password"></td>
+                      </tr>
+                      <tr>
+                        <td>Konfirmasi Password</td>
+                        <td><input type="password" name="konfirmasi"></td>
+                      </tr>
+                      <!-- E. TOMBOL -->
+                       <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" 
+                            value="Daftar" class="btn-submit">
+                            <input type="reset" value="Reset"
+                            class="btn-reset">
+                            </td>
+                       </tr>
+                </table>
+            </form>
+    </body>
+</html>

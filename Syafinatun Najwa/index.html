@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fomulir Pendaftaran Siswa Baru</title>
+        <style>
+            body {
+                font-family:Arial, sans-serif ;
+                background-color: lightcoral;
+            }
+            .container {
+                width: 500px;
+                margin: 50px auto;
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            }
+            h2 {
+                text-align: center;
+            }
+            table {
+                width: 100%;
+            }
+            td {
+                padding: 8px;
+            }
+            input, select, textarea {
+                width: 100px;
+                padding: 5px;
+            }
+             .button { 
+                width: 45%;
+                padding: 8px;   
+                margin: 5px;
+                border: none;
+                border-radius: 5px;
+                background-color: coral;
+                color: white;
+                cursor: pointer;
+            }
+            input[type="reset"] {
+                background-color: cornflowerblue;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Formulir Pendaftaran Siswa Baru</h2>
+            <h3>SMK Muhammadiyah 1 Weleri</h3>
+            <h3>Tahun Ajaran 2026/2027</h3>
+
+            <Form>
+                <table>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td><input type="text" name="nama" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="jk">
+                        Laki-Laki
+                            <td><input type="radio" name="jk"></td>
+                        Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Aamat</td>
+                        <td><input type="text" name="asal_sekolah" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan Pilihan</td>
+                        <td>
+                            <select name="jurusan" required></select>
+                            <option value="">-- Pilih Jurusan--</option>
+                            <option>PPLG</option>
+                            <option>AKL</option>
+                            <option>MPLB</option>
+                            <option>KULINER</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>No. HP</td>
+                        <td><input type="text" name="hp" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="hp" required></td>
+                        </select>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="button"> <input type="Submit" value="Daftar"> <input type="reset" value="Batal"></td>
+                    </tr>
+                </table>
+            </Form>
+        </div>
+    </body>
+</html>
